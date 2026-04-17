@@ -1,0 +1,4 @@
+interface:
+  display_name: "Self-Critic"
+  short_description: "Adversarial background critic agent for code review"
+  default_prompt: "Use $self-critic to review my latest work with reasonable harshness and inject feedback."
