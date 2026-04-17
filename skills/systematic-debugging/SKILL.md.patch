@@ -1,0 +1,18 @@
+--- ~/.codex/superpowers/skills/systematic-debugging/SKILL.md
++++ ~/.codex/superpowers/skills/systematic-debugging/SKILL.md
+@@ -107,6 +107,10 @@
+    - If < 3: Return to Phase 1, re-analyze with new information
+    - **If ≥ 3: STOP and question the architecture (step 5 below)**
+    - DON'T attempt Fix #4 without architectural discussion
++   - **At this point, use `session-distiller` to capture the exact failure state, the 3 attempted fixes, and the hypothesis. Write it to a memory using `memory-maker` so you don't repeat this spiral.**
+ 
+ 5. **If 3+ Fixes Failed: Question Architecture**
+ 
+@@ -124,6 +128,7 @@
+    - Are we "sticking with it through sheer inertia"?
+    - Should we refactor architecture vs. continue fixing symptoms?
+ 
++   **Use the `self-critic` skill** to ask for an adversarial review of your architecture. Often, a fresh perspective catches the fundamental flaw you are blind to.
+    **Discuss with your human partner before attempting more fixes**
+ 
+    This is NOT a failed hypothesis - this is a wrong architecture.
